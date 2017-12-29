@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>eq.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript">
+		$(function(){
+			var j=$("input")
+			//eq是获取 选择器选中的多个jquery对象中 索引指定的那个
+			alert(j.eq(0).val());
+			//get返回的是dom对象
+			alert(j.get(0).value);
+		})
+	</script>
+  </head>
+  
+  <body>
+    <input type="text" id="username" value="eq">
+    <input type="password" id="password" value="123456">
+  </body>
+</html>
